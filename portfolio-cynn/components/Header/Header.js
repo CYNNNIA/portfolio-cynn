@@ -9,12 +9,12 @@ const template = () => {
     </div>
     
     <nav> 
-      <ul>
+      <ul class="nav-horizontal-list">
         <li>
-          <a href="#aboutme">Acerca de mi      </a>
+          <a href="#aboutme">Acerca de mi</a>
         </li>
         <li>
-          <a href="#education">Formación      </a>
+          <a href="#education">Formación</a>
         </li>
         <li>
           <a href="#experience">Experiencia</a>
@@ -25,12 +25,26 @@ const template = () => {
       </ul>
     </nav>
     
-    <div>
-    <h2>Desarrolladora Frontend</h2>
-    <h3>- HTML</h3>
-    <h3>- CSS</h3>
-    <h3>- JavaScript</h3>
-    </div>
+    <div class="otros">
+    <h2>         Desarrolladora Frontend</h2>
+    <ul class="horizontal-list">
+      <li>       - HTML</li>
+      <li>       - CSS</li>
+      <li>       - JavaScript</li>
+    </ul>
+  </div>
+
+    <section class="caracteristicas">
+      <h2>Características</h2>
+      <ul class="horizontal-list">
+        <li> - Resolutiva</li>
+        <li>- Apasionada</li>
+        <li>- Entusiasta</li>
+        <li>- Optimista</li>
+        <li>- Determinada</li>
+        <li>- Creativa</li>
+      </ul>
+    </section>
 
   </header>
   `

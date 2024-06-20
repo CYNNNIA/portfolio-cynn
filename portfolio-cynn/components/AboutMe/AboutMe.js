@@ -22,7 +22,7 @@ const template = () => {
       <p>${data.address}</p>
       <a href="mailto:${data.email}">Contact me</a>
       <div class="social-links">
-    <a img src="portfolio-cynn/linkedin.png" href="https://www.linkedin.com/in/cynthia-lorenzo-lopez-54968823b" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/cynthia-lorenzo-lopez-54968823b" target="_blank">LinkedIn</a>
     <a href="https://github.com/cynthialorenzolopez" target="_blank">GitHub</a>
   </div>
     </section>

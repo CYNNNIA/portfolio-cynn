@@ -27,7 +27,7 @@ body {
 header.sidebar {
   background-color: #ffc0cb;
   color: rgb(9, 71, 217);
-  width: 14vw;
+  width: 18vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,13 +39,13 @@ header.sidebar {
 }
 
 header.sidebar img {
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
   margin-top: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 header h1 {
@@ -73,11 +73,20 @@ header.sidebar h3 {
   color: rgb(247, 249, 250);
 }
 
+.caracteristicas {
+  margin-top: -5rem;
+  margin-left: -4vw;
+}
+
+.caracteristicas ul li {
+  font-size: 1rem;
+}
 header nav ul {
   list-style-type: none;
   width: 100%;
-  margin-top: -10rem; /* Añadir margen superior */
+  margin-top: -5rem; /* Añadir margen superior */
   padding: 0;
+  margin-bottom: -5rem;
 }
 
 header nav ul li {
@@ -106,7 +115,7 @@ main {
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .aboutme {
@@ -163,45 +172,124 @@ section {
 }
 
 /* Responsive Styles */
-@media (max-width: 1320px) {
+@media (max-width: 1300px) {
   header.sidebar {
     width: 100vw;
     height: auto;
     position: relative;
+    display: flex;
+    flex-direction: column; /* Alinea los contenedores verticalmente */
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
   }
 
   header.sidebar img {
     display: none;
   }
 
-  header.sidebar div:last-child {
-    display: none;
+  header.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem; /* Añade espacio entre los contenedores */
   }
 
-  header nav ul {
-    margin-top: 1rem;
-  }
-
-  main {
-    margin-left: 0;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  header h1 {
+  header.sidebar h1 {
     margin-top: 0;
     font-size: 1.5rem;
   }
 
-  header.sidebar h2 {
-    font-size: 1.2rem;
+  header.sidebar nav {
+    width: 100%;
   }
 
-  header.sidebar h3 {
-    font-size: 1rem;
+  header.sidebar nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    margin: 1rem 0;
   }
 
-  header nav ul li a {
+  header.sidebar nav ul li {
+    margin-right: 20px;
+  }
+
+  header.sidebar nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  header.sidebar nav ul li a {
     padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  header.sidebar .otros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  header.sidebar .otros h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header.sidebar .otros ul {
+    display: flex; /* Alinea horizontalmente */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+
+  header.sidebar .otros li {
+    margin-right: 10px; /* Añade espacio entre los elementos de la lista */
+  }
+
+  header.sidebar .otros li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento */
+  }
+
+  header.sidebar .caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  header.sidebar .caracteristicas h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header.sidebar .caracteristicas ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header.sidebar .caracteristicas li {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  header.sidebar .nav-horizontal-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+  }
+  .nav-horizontal-list li:last-child {
+    margin-left: -20px;
   }
 }
