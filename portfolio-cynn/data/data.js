@@ -7,8 +7,11 @@ const data = {
     linkedin: 'www.linkedin.com/in/cynthia-lorenzo-lopez-54968823b',
     github: 'github.com/cynthialorenzolopez'
   },
-  aboutMe:
-    'Soy una persona altamente resolutiva y apasionada por las nuevas tecnologías y la programación. Mi entusiasmo y optimismo me impulsan a crecer continuamente tanto a nivel profesional como personal. Aunque mi experiencia pueda no ser extensa, mi determinación y capacidad de aprendizaje son excepcionales. Estoy convencida de que puedo alcanzar y superar cualquier objetivo que se me presente, aportando innovación y creatividad en cada desafío. Estoy ansiosa por contribuir con mi energía y habilidades a proyectos que marquen la diferencia y me permitan seguir evolucionando en el fascinante mundo de la tecnología.',
+  aboutMe: `Soy una persona resolutiva y apasionada por las nuevas tecnologías y la programación. A lo largo de mi carrera, he acumulado una considerable experiencia comercial, lo que me ha permitido desarrollar una visión estratégica y una comprensión profunda del mercado. Además, trabajo muy bien en equipo, colaborando eficazmente con diversos profesionales para alcanzar objetivos comunes.<br><br>
+
+Mi entusiasmo y optimismo me impulsan a crecer continuamente, tanto a nivel profesional como personal. Aunque mi experiencia en algunas áreas no es extensa, tengo una gran determinación y capacidad de aprendizaje. Me encanta enfrentar nuevos desafíos y estoy convencida de que puedo alcanzar y superar cualquier objetivo que se me presente. Mi enfoque innovador y creativo me permite aportar soluciones únicas y efectivas en cada proyecto.<br><br>
+
+Estoy ansiosa por contribuir con mi energía y habilidades a proyectos que marquen la diferencia y me permitan seguir evolucionando en el fascinante mundo de la tecnología. Creo firmemente que mi experiencia comercial, mi capacidad para trabajar en equipo y mi pasión por la tecnología serán valiosas en cualquier emprendimiento. Estoy lista para seguir aprendiendo, creciendo y aportando lo mejor de mí en este emocionante viaje.`,
 
   education: {
     degree: 'Full Stack Web Development Certificate',
@@ -44,22 +47,22 @@ const data = {
     {
       title: 'E-commerce Website',
       description:
-        'Designed and developed a feature-rich e-commerce platform with advanced product search, user reviews, and a secure payment system, resulting in a 30% increase in sales for the client.',
+        'Diseñé y desarrollé una plataforma de comercio electrónico con múltiples funciones, que incluye búsqueda avanzada de productos.',
       link: 'https://fluffy-tartufo-8de171.netlify.app',
       preview:
         'https://fluffy-tartufo-8de171.netlify.app/assets/Slider_Progresivos_1920x800px_OU_CAST.webp'
     },
     {
-      title: 'Blog Platform',
+      title: 'E-commerce Website',
       description:
-        'Created a customizable blog platform with dynamic content creation, user authentication, comment functionality, and social media integration, leading to a 50% growth in user engagement.',
+        'Diseñé y desarrollé una plataforma de comercio electrónico con múltiples funciones, que incluye búsqueda avanzada de productos,.',
       link: 'https://proyectovanscynthia.netlify.app',
       preview: 'https://proyectovanscynthia.netlify.app/assets/VansBanner.webp'
     },
     {
-      title: 'Portfolio Website',
+      title: 'Travel Website',
       description:
-        'Built a professional portfolio website to showcase my web development skills and projects. The site features a clean, responsive design and highlights my work as a developer.',
+        'BDiseñé y desarrollé un sitio web informativo para una ciudad, con información turística detallada sobre los lugares de interés, eventos locales y recomendaciones de restaurantes.',
       link: 'https://lovely-mermaid-eb6009.netlify.app',
       preview: 'https://lovely-mermaid-eb6009.netlify.app/T7B92J.webp'
     }

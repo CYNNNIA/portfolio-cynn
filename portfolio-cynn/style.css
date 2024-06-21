@@ -172,7 +172,122 @@ section {
 }
 
 /* Responsive Styles */
+@media (max-height: 900px) {
+  header.sidebar {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Alinea los contenedores verticalmente */
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  main {
+    margin-left: 10vw;
+  }
+
+  header.sidebar img {
+    display: none;
+  }
+
+  header.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem; /* Añade espacio entre los contenedores */
+  }
+
+  header.sidebar h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  header.sidebar nav {
+    width: 100%;
+  }
+
+  header.sidebar nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  header.sidebar nav ul li {
+    margin-right: 20px;
+  }
+
+  header.sidebar nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  header.sidebar nav ul li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  header.sidebar .otros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  header.sidebar .otros h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header.sidebar .otros ul {
+    display: flex; /* Alinea horizontalmente */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+
+  header.sidebar .otros li {
+    margin-right: 10px; /* Añade espacio entre los elementos de la lista */
+  }
+
+  header.sidebar .otros li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento */
+  }
+
+  header.sidebar .caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  header.sidebar .caracteristicas h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header.sidebar .caracteristicas ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header.sidebar .caracteristicas li {
+    margin: 5px 10px;
+  }
+}
+
 @media (max-width: 1300px) {
+  main {
+    margin-left: 10vw;
+  }
   header.sidebar {
     width: 100vw;
     height: auto;
