@@ -4,20 +4,18 @@ import Education from '../Education/Education'
 import Experience from '../Experience/Experience'
 import Projects from '../Projects/Projects'
 
-let show = 'Experience'
-
 const template = () => {
   return `
-  <main>
-    ${AboutMe()}
-    <div class="change-container">
-      <button id="change">Show ${show}</button>
-    </div>
-    <div id="content">
-      ${Education()}
-    </div>
-    ${Projects()}
-  </main>
+    <main>
+      ${AboutMe()}
+      <div class="tabs-container">
+        <!-- Botones de pestañas se generarán dinámicamente aquí -->
+      </div>
+      <div id="content">
+        ${Experience()}
+      </div>
+      ${Projects()}
+    </main>
   `
 }
 
@@ -26,18 +24,40 @@ export const Main = () => {
 }
 
 export const addMainListeners = () => {
-  const button = document.querySelector('#change')
+  const tabsContainer = document.querySelector('.tabs-container')
+  const content = document.querySelector('#content')
 
-  button.addEventListener('click', () => {
-    const content = document.querySelector('#content')
+  const sections = {
+    Experiencia: Experience,
+    Formación: Education
+  }
 
-    if (show === 'Experience') {
-      content.innerHTML = `${Experience()}`
-      show = 'Education'
-    } else {
-      content.innerHTML = `${Education()}`
-      show = 'Experience'
-    }
-    button.textContent = `Show ${show}`
+  // Crear los botones de pestañas dinámicamente
+  Object.keys(sections).forEach((section) => {
+    const button = document.createElement('button')
+    button.classList.add('tab')
+    button.setAttribute('data-tab', section)
+    button.textContent = section
+    tabsContainer.appendChild(button)
   })
+
+  const tabs = document.querySelectorAll('.tab')
+  let show = 'Experiencia' // Sección inicial
+
+  const updateContent = () => {
+    content.innerHTML = `${sections[show]()}`
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', (event) => {
+      show = event.target.getAttribute('data-tab')
+      tabs.forEach((t) => t.classList.remove('active'))
+      event.target.classList.add('active')
+      updateContent()
+    })
+  })
+
+  // Inicializar con el contenido de la sección inicial
+  updateContent()
+  document.querySelector(`.tab[data-tab="${show}"]`).classList.add('active')
 }

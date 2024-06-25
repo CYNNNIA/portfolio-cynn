@@ -171,6 +171,64 @@ section {
   font-size: 25px;
 }
 
+.projects {
+  margin: 30px 0;
+  border: 1px solid red;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects h1 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: var(--heading);
+  text-align: center;
+  background-color: #e7e7f68a;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+/* Main.css */
+
+.tabs-container {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #f4f4f9;
+  color: var(--heading);
+  font-size: 2em;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab.active {
+  border-bottom: 2px solid #333;
+}
+
+/* Estilos para el contenido */
+#content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Styles */
 @media (max-height: 900px) {
   header.sidebar {
@@ -282,6 +340,10 @@ section {
   header.sidebar .caracteristicas li {
     margin: 5px 10px;
   }
+}
+
+.tab {
+  font-size: 1rem;
 }
 
 @media (max-width: 1300px) {

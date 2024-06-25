@@ -4,23 +4,27 @@ import './Education.css'
 const template = () => {
   return `
     <section class="education" id="education">
-      <h2>Education</h2>
-      <h3>${data.education.degree}</h3>
-      <h4>${data.education.university}</h4>
-      <p>${data.education.graduationYear}</p>
-      <p>${data.education.honors}</p>
-      <h3>Relevant Courses</h3>
-      <ul id="relevantcourses">
-      ${data.education.relevantCourses
+      <h1>Formación</h1>
+      ${data.education
         .map(
-          (course) => `
-      <li>
-        <p>${course}</p>
-      </li>
+          (edu) => `
+        <div class="education-entry">
+          <h2>${edu.degree}</h2>
+          <h3>${edu.university}</h3>
+          <h4>Habilidades y conocimientos</h4>
+          <ul>
+            ${edu.relevantCourses
+              .map(
+                (course) => `
+              <li>${course}</li>
+            `
+              )
+              .join('')}
+          </ul>
+        </div>
       `
         )
         .join('')}
-      </ul>
     </section>
   `
 }

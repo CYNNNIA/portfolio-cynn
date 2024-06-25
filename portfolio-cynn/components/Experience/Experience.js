@@ -4,17 +4,15 @@ import './Experience.css'
 const template = () => {
   return `
   <section class="experience" id="experience">
-    <h2>Experience</h2>
+    <h1>Experiencia</h1>
     <ul>
       ${data.workExperience
         .map(
           (item) => `
-      <li>
-        <h3>${item.startDate} - ${item.endDate}</h3>
-        <h4>${item.company}</h4>
-        <h4>${item.position}</h4>
-        <p>${item.description}</p>
-      </li>
+          <h2>${item.position}</h2>
+        <h3>${item.company}</h3>
+        <p>${item.startDate} - ${item.endDate}</p>
+        <h4>${item.description}</h4>
       `
         )
         .join('')}

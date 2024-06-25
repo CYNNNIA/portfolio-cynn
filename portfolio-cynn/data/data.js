@@ -3,7 +3,7 @@ const data = {
   address: 'Madrid, Spain',
   email: 'cynthialorenzolopez@gmail.com',
   avatar: '8c5eadb0-fcd2-49d6-8805-326515518d51.jpg',
-  ssocialLinks: {
+  socialLinks: {
     linkedin: 'www.linkedin.com/in/cynthia-lorenzo-lopez-54968823b',
     github: 'github.com/cynthialorenzolopez'
   },
@@ -13,17 +13,23 @@ Mi entusiasmo y optimismo me impulsan a crecer continuamente, tanto a nivel prof
 
 Estoy ansiosa por contribuir con mi energía y habilidades a proyectos que marquen la diferencia y me permitan seguir evolucionando en el fascinante mundo de la tecnología. Creo firmemente que mi experiencia comercial, mi capacidad para trabajar en equipo y mi pasión por la tecnología serán valiosas en cualquier emprendimiento. Estoy lista para seguir aprendiendo, creciendo y aportando lo mejor de mí en este emocionante viaje.`,
 
-  education: {
-    degree: 'Full Stack Web Development Certificate',
-    university: 'The Power School',
-    graduationYear: 2024,
-    relevantCourses: [
-      'Web Development Fundamentals',
-      'Data Structures and Algorithms',
-      'Database Design',
-      'User Interface Design'
-    ]
-  },
+  education: [
+    {
+      degree: 'Web Development Bootcamp',
+      university: 'The Power School',
+      relevantCourses: ['HTML', 'CSS', 'JAVASCRIPT']
+    },
+    {
+      degree: 'Master en Comunicación, Protocolo y Relaciones Institucionales',
+      university: 'UNED',
+      relevantCourses: ['HTML', 'CSS', 'JAVASCRIPT']
+    },
+    {
+      degree: 'Diplomatura en Relaciones Laborales',
+      university: 'Universidad de La Laguna (Tenerife)',
+      relevantCourses: ['HTML', 'CSS', 'JAVASCRIPT']
+    }
+  ],
   workExperience: [
     {
       position: 'Web Developer',
@@ -42,7 +48,7 @@ Estoy ansiosa por contribuir con mi energía y habilidades a proyectos que marqu
         'During my freelancing period, I collaborated with clients from diverse industries, delivering tailor-made websites that met their unique needs and goals.'
     }
   ],
-  skills: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
+  skills: ['HTML5', 'CSS3', 'JavaScript'],
   projects: [
     {
       title: 'E-commerce Website',

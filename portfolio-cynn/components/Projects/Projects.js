@@ -4,7 +4,7 @@ import './Projects.css'
 const template = () => {
   return `
   <section class="projects" id="projects">
-    <h2>Recent Projects</h2>
+    <h1>Proyectos</h1>
     <ul>
       ${data.projects
         .map(
