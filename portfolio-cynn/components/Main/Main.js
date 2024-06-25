@@ -28,8 +28,8 @@ export const addMainListeners = () => {
   const content = document.querySelector('#content')
 
   const sections = {
-    Experiencia: Experience,
-    Formación: Education
+    Formación: Education,
+    Experiencia: Experience
   }
 
   // Crear los botones de pestañas dinámicamente
