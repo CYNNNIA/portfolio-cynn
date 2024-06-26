@@ -173,16 +173,16 @@ section {
 
 .projects {
   margin: 30px 0;
-  border: 1px solid red;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
 }
 
 .projects h1 {
   font-size: 1.6em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--heading);
   text-align: center;
   background-color: #e7e7f68a;
