@@ -42,7 +42,7 @@ export const addMainListeners = () => {
   })
 
   const tabs = document.querySelectorAll('.tab')
-  let show = 'Experiencia' // Sección inicial
+  let show = 'Formación' // Sección inicial
 
   const updateContent = () => {
     content.innerHTML = `${sections[show]()}`
